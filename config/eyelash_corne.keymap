@@ -47,9 +47,9 @@
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc 0>, <&msc 1>;
+        bindings = <&msc -1>, <&msc 1>;
 
-        tap-ms = <100>;
+        //tap-ms = <100>;
     };
 
     combos {
@@ -91,10 +91,10 @@
         layer2 {
             display-name = "Symbol";
             bindings = <
-&kp ESC &kp LPAR &kp RPAR &kp KP_N7 &kp KP_N8 &kp KP_N9                       &trans          &kp AMPS &kp SQT   &kp DQT   &kp GRAVE &kp PIPE  &kp MINUS
-&trans  &kp LBKT &kp RBKT &kp KP_N4 &kp KP_N5 &kp KP_N6                &trans &trans &trans   &kp LPAR &kp RPAR  &kp LBKT  &kp RBKT  &kp ASTRK &trans
-&trans  &kp LBRC &kp RBRC &kp KP_N1 &kp KP_N2 &kp KP_N3    &kp C_MUTE         &trans          &trans   &trans    &trans    &trans    &trans    &trans
-                                &trans  &kp KP_N0  &trans                                   &trans  &trans  &trans
+&kp ESC &kp LPAR &kp RPAR &kp KP_N7 &kp KP_N8 &kp KP_N9                             &mmv MOVE_UP                 &kp AMPS &kp SQT   &kp DQT   &kp GRAVE &kp PIPE  &kp MINUS
+&trans  &kp LBKT &kp RBKT &kp KP_N4 &kp KP_N5 &kp KP_N6              &mmv MOVE_LEFT &mkp LCLK  &mmv MOVE_RIGHT   &kp LPAR &kp RPAR  &kp LBKT  &kp RBKT  &kp ASTRK &trans
+&trans  &kp LBRC &kp RBRC &kp KP_N1 &kp KP_N2 &kp KP_N3    &kp C_MUTE               &mmv MOVE_DOWN               &kp EXCL &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &trans
+                                &trans  &kp KP_N0  &trans                                                      &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -103,10 +103,10 @@
         layer3 {
             display-name = "Func";
             bindings = <
-&trans         &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                     &trans           &kp F6         &kp F7          &kp F8       &kp F9          &kp F10   &kp F11
-&bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &trans &trans &trans    &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &kp BSLH  &kp GRAVE
-&trans         &none        &none        &none        &none        &none       &to 0          &trans           &kp UNDER      &kp PLUS        &kp LBRC     &kp RBRC        &kp PIPE  &kp TILDE
-                                                       &trans     &trans     &none                           &kp BSPC  &mkp LCLK  &mkp RCLK
+&trans         &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                            &mmv MOVE_UP                  &kp F6         &kp F7          &kp F8       &kp F9          &kp F10   &kp F11
+&bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &mmv MOVE_LEFT &mkp LCLK  &mmv MOVE_RIGHT    &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT &kp BSLH  &kp GRAVE
+&trans         &none        &none        &none        &none        &none       &to 0                 &mmv MOVE_DOWN                &kp UNDER      &kp PLUS        &kp LBRC     &kp RBRC        &kp PIPE  &kp TILDE
+                                                       &trans     &trans     &none                                               &kp BSPC  &mkp LCLK  &mkp RCLK
             >;
 
             sensor-bindings = <&scroll_encoder>;
