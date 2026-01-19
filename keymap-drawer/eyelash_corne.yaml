@@ -95,8 +95,8 @@ layers:
   - Gui+$$mdi:apple-keyboard-option$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - INS
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Symbol:
   - $$mdi:keyboard-esc$$
