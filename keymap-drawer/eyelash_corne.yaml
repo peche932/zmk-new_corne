@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
@@ -30,7 +30,7 @@ layers:
   - {t: ;, h: Layer1, s: ':'}
   - {t: '$$mdi:keyboard-return$$', h: Symbol}
   - $$mdi:apple-keyboard-shift$$
-  - Z
+  - {t: Z, h: '$$mdi:apple-keyboard-option$$'}
   - X
   - C
   - V
@@ -38,7 +38,7 @@ layers:
   - {t: Func, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
-  - M
+  - {t: M, h: Shift}
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -62,7 +62,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+1, s: Sft+!}
   - {t: Sft+2, s: Sft+@}
@@ -92,7 +92,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+$$mdi:apple-keyboard-option$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - INS
@@ -111,7 +111,7 @@ layers:
   - '"'
   - {t: '`', s: '~'}
   - '|'
-  - {t: '-', s: _}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -125,8 +125,8 @@ layers:
   - )
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '*'
-  - {type: held}
+  - '{'
+  - {t: '}', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - '{'
   - '}'
@@ -135,14 +135,14 @@ layers:
   - KP 3
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '!'
+  - '~'
   - '@'
   - '#'
   - $
   - '%'
+  - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 0
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -196,6 +196,55 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
+  Shift:
+  - $$mdi:keyboard-tab$$
+  - {t: Sft+1, s: Sft+!}
+  - {t: Sft+2, s: Sft+@}
+  - {t: Sft+3, s: Sft+#}
+  - {t: Sft+4, s: Sft+$}
+  - {t: Sft+5, s: Sft+%}
+  - $$mdi:arrow-up-bold$$
+  - {t: Sft+6, s: Sft+^}
+  - {t: Sft+7, s: Sft+&}
+  - {t: Sft+8, s: Sft+*}
+  - {t: Sft+9, s: Sft+(}
+  - {t: Sft+0, s: Sft+)}
+  - {t: Sft+-, s: Sft+_}
+  - $$mdi:apple-keyboard-control$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, h: Layer1, s: ':'}
+  - {t: '$$mdi:keyboard-return$$', h: Symbol}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: Z, h: '$$mdi:apple-keyboard-option$$'}
+  - X
+  - C
+  - V
+  - B
+  - {t: Func, h: toggle}
+  - $$mdi:arrow-down-bold$$
+  - N
+  - {t: M, type: held}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
+  - {t: 'Hyper+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-space$$', h: Layer1}
+  - {t: 'Alt+Ctl+Gui+$$mdi:keyboard-space$$', h: Symbol}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-command$$
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
