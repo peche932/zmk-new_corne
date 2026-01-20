@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   PECHE:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-esc$$'}
   - Q
   - W
   - E
@@ -38,11 +38,11 @@ layers:
   - {t: Func, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
-  - {t: M, h: Shift}
+  - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: Shift}
   - {t: 'Hyper+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: Layer1}
   - {t: 'Alt+Ctl+Gui+$$mdi:keyboard-space$$', h: Symbol}
@@ -100,11 +100,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Symbol:
   - $$mdi:keyboard-esc$$
-  - (
+  - {t: Sft+Alt+Gui+1, s: Sft+Alt+Gui+!}
   - )
   - KP 7
-  - KP 8
-  - KP 9
+  - {t: Gui+Alt+Sft+4, s: Gui+Alt+Sft+$}
+  - {t: Gui+Sft+5, s: Gui+Sft+%}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&'
   - {t: '''', s: '"'}
@@ -234,11 +234,11 @@ layers:
   - {t: Func, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
-  - {t: M, type: held}
+  - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', type: held}
   - {t: 'Hyper+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: Layer1}
   - {t: 'Alt+Ctl+Gui+$$mdi:keyboard-space$$', h: Symbol}
