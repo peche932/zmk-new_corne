@@ -42,7 +42,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_Y(-5)>, <&msc MOVE_Y(5)>;
 
-            tap-ms = <300>;
+            tap-ms = <30>;
         };
 
         hml: homerow_mods_left {
@@ -51,7 +51,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <185>;
             hold-trigger-key-positions = <45 46 19 21 6 20 35 47 36 37 23 22 7 8 9 24 38 10 11 12 25 26 27 39 40 41 0 1 2 3 4 5 13 14 15 16 17 18 28 30 31 32 33 34 42 43 44 29>;
         };
     };
@@ -85,10 +85,10 @@
         default {
             display-name = "PECHE";
             bindings = <
-&hml ESC TAB  &kp Q            &kp W  &kp E                                   &kp R        &kp T                                                &mmv MOVE_Y(-100)                    &kp Y     &kp U      &kp I      &kp O    &kp P       &kp MINUS
-&kp LCTRL     &kp A            &kp S  &kp D                                   &kp F        &kp G                             &mmv MOVE_X(-100)  &mkp MB4           &mmv MOVE_X(100)  &kp H     &kp J      &kp K      &kp L    &lt 1 SEMI  &lt 2 ENTER
-&kp LSHFT     &hml LEFT_ALT Z  &kp X  &kp C                                   &kp V        &kp B                    &to 3                       &mmv MOVE_Y(100)                     &kp N     &kp M      &kp COMMA  &kp DOT  &kp SLASH   &lt 4 ESC
-                                      &mt LEFT_COMMAND LA(LC(LG(LS(SPACE))))  &lt 1 SPACE  &lt 2 LA(LC(LG(SPACE)))                                                                   &kp BSPC  &kp SPACE  &kp RCMD
+&hml ESC TAB  &kp Q  &kp W        &kp E                                   &kp R        &kp T                                              &msc MOVE_Y(-5)                  &kp Y     &kp U      &kp I      &kp O    &kp P       &kp MINUS
+&kp LCTRL     &kp A  &kp S        &kp D                                   &kp F        &kp G                             &msc MOVE_Y(-5)  &mkp MB4         &msc MOVE_X(5)  &kp H     &kp J      &kp K      &kp L    &lt 1 SEMI  &lt 2 ENTER
+&kp LSHFT     &kp Z  &hml X LALT  &kp C                                   &kp V        &kp B                    &to 3                     &msc MOVE_Y(5)                   &kp N     &kp M      &kp COMMA  &kp DOT  &kp SLASH   &lt 4 ESC
+                                  &mt LEFT_COMMAND LA(LC(LG(LS(SPACE))))  &lt 1 SPACE  &lt 2 LA(LC(LG(SPACE)))                                                             &kp BSPC  &kp SPACE  &kp RCMD
             >;
 
             sensor-bindings = <&new_scroll>;
@@ -97,10 +97,10 @@
         layer1 {
             display-name = "Layer1";
             bindings = <
-&kp ESC  &kp N1      &kp N2      &kp N3        &kp N4      &kp N5                                      &kp DOUBLE_QUOTES                     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp EQUAL
-&trans   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)  &kp LS(N5)                &kp LEFT_BRACKET  &kp ASTERISK       &kp RIGHT_BRACKET  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp BSLH   &trans
-&trans   &kp LS(N6)  &kp LS(N7)  &kp LS(N8)    &kp LS(N9)  &kp LS(N0)  &kp C_MUTE                      &kp SINGLE_QUOTE                      &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT  &trans
-                                 &kp LG(LALT)  &trans      &trans                                                                            &trans    &trans    &trans
+&kp ESC  &kp N1      &kp N2      &kp N3        &kp N4      &kp N5                                      &kp DOUBLE_QUOTES                     &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp EQUAL
+&trans   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)  &kp LS(N5)                &kp LEFT_BRACKET  &kp ASTERISK       &kp RIGHT_BRACKET  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp BSLH    &trans
+&trans   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)  &kp LS(N5)  &kp C_MUTE                      &kp SINGLE_QUOTE                      &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &trans
+                                 &kp LG(LALT)  &trans      &trans                                                                            &trans      &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -109,10 +109,10 @@
         layer2 {
             display-name = "Symbol";
             bindings = <
-&kp ESC  &kp LS(LA(LG(N1)))  &trans  &kp KP_N7       &kp LG(LS(LC(N4)))  &kp LG(LS(N5))                                             &mmv MOVE_UP                     &kp AMPS               &kp SQT                &kp DQT          &kp GRAVE  &kp PIPE  &kp BACKSLASH
-&trans   &trans              &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans     &trans    &trans
-&trans   &trans              &trans  &kp KP_N1       &kp KP_N2           &kp KP_N3             &kp LS(LC(LG(L)))                    &mmv MOVE_DOWN                   &trans                 &trans                 &trans           &trans     &trans    &trans
-                                     &trans          &trans              &trans                                                                                      &kp LG(LEFT_BRACKET)   &kp LG(RIGHT_BRACKET)  &trans
+&kp ESC  &kp LS(LA(LG(N1)))  &trans  &trans          &kp LG(LS(LC(N4)))  &kp LG(LS(N5))                                                &mmv MOVE_Y(-200)                    &kp AMPS               &kp SQT                &kp DQT          &kp GRAVE  &kp PIPE  &kp BACKSLASH
+&trans   &trans              &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS                       &mmv MOVE_X(-200)  &mkp LCLK          &mmv MOVE_X(200)  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans     &trans    &trans
+&trans   &trans              &trans  &trans          &trans              &trans                &kp LS(LC(LG(L)))                       &mmv MOVE_Y(200)                     &trans                 &trans                 &trans           &trans     &trans    &trans
+                                     &trans          &trans              &trans                                                                                             &kp LG(LEFT_BRACKET)   &kp LG(RIGHT_BRACKET)  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
