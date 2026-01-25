@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - '&msc MOVE_Y(-5)'
+  - '&msc MOVE_Y(10)'
   - Y
   - U
   - I
@@ -20,9 +20,9 @@ layers:
   - D
   - F
   - G
-  - '&msc MOVE_Y(-5)'
+  - '&msc MOVE_X(-10)'
   - '&mkp MB4'
-  - '&msc MOVE_X(5)'
+  - '&msc MOVE_X(10)'
   - H
   - J
   - K
@@ -31,12 +31,12 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Symbol}
   - $$mdi:apple-keyboard-shift$$
   - Z
-  - {t: '$$mdi:apple-keyboard-option$$', h: X}
+  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - C
   - V
   - B
   - {t: Func, h: toggle}
-  - '&msc MOVE_Y(5)'
+  - '&msc MOVE_Y(-10)'
   - N
   - M
   - {t: ',', s: <}
