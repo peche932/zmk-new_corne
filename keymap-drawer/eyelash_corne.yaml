@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - '&mmv MOVE_Y(-100)'
+  - '&msc MOVE_Y(-5)'
   - Y
   - U
   - I
@@ -20,9 +20,9 @@ layers:
   - D
   - F
   - G
-  - '&mmv MOVE_X(-100)'
+  - '&msc MOVE_Y(-5)'
   - '&mkp MB4'
-  - '&mmv MOVE_X(100)'
+  - '&msc MOVE_X(5)'
   - H
   - J
   - K
@@ -30,13 +30,13 @@ layers:
   - {t: ;, h: Layer1, s: ':'}
   - {t: '$$mdi:keyboard-return$$', h: Symbol}
   - $$mdi:apple-keyboard-shift$$
-  - {t: Z, h: '$$mdi:apple-keyboard-option$$'}
-  - X
+  - Z
+  - {t: '$$mdi:apple-keyboard-option$$', h: X}
   - C
   - V
   - B
   - {t: Func, h: toggle}
-  - '&mmv MOVE_Y(100)'
+  - '&msc MOVE_Y(5)'
   - N
   - M
   - {t: ',', s: <}
@@ -79,18 +79,18 @@ layers:
   - {t: \, s: '|', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+1, s: Sft+!}
+  - {t: Sft+2, s: Sft+@}
+  - {t: Sft+3, s: Sft+#}
+  - {t: Sft+4, s: Sft+$}
+  - {t: Sft+5, s: Sft+%}
+  - $$mdi:volume-off$$
+  - {t: '''', s: '"'}
   - {t: Sft+6, s: Sft+^}
   - {t: Sft+7, s: Sft+&}
   - {t: Sft+8, s: Sft+*}
   - {t: Sft+9, s: Sft+(}
   - {t: Sft+0, s: Sft+)}
-  - $$mdi:volume-off$$
-  - {t: '''', s: '"'}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+$$mdi:apple-keyboard-option$$
   - {type: held alternate}
@@ -102,10 +102,10 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: Sft+Alt+Gui+1, s: Sft+Alt+Gui+!}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 7
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+Sft+Ctl+4, s: Gui+Sft+Ctl+$}
   - {t: Gui+Sft+5, s: Gui+Sft+%}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_Y(-200)'
   - '&'
   - {t: '''', s: '"'}
   - '"'
@@ -118,9 +118,9 @@ layers:
   - '{'
   - {t: '[', s: '{'}
   - (
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_X(-200)'
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_X(200)'
   - )
   - {t: ']', s: '}'}
   - '}'
@@ -130,11 +130,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 1
-  - KP 2
-  - KP 3
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Sft+Ctl+Gui+L
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_Y(200)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
