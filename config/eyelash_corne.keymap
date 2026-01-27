@@ -51,8 +51,15 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
+            tapping-term-ms = <140>;
             hold-trigger-key-positions = <45 46 19 21 6 20 35 47 36 37 23 22 7 8 9 24 38 10 11 12 25 26 27 39 40 41 0 1 2 3 4 5 13 14 15 16 17 18 28 30 31 32 33 34 42 43 44 29>;
+        };
+
+        BT_SWITCH: BT_SWITCH {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "BT_SWITCH";
+            #sensor-binding-cells = <0>;
+            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
         };
     };
 
@@ -97,10 +104,10 @@
         layer1 {
             display-name = "Layer1";
             bindings = <
-&kp ESC  &kp N1      &kp N2      &kp N3        &kp N4      &kp N5                                      &kp DOUBLE_QUOTES                     &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp EQUAL
-&trans   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)  &kp LS(N5)                &kp LEFT_BRACKET  &kp ASTERISK       &kp RIGHT_BRACKET  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp BSLH    &trans
-&trans   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)  &kp LS(N5)  &kp C_MUTE                      &kp SINGLE_QUOTE                      &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &trans
-                                 &kp LG(LALT)  &trans      &trans                                                                            &trans      &trans      &trans
+&kp ESC  &kp N1      &kp N2      &kp N3        &kp N4      &kp N5                                      &kp TILDE                            &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp EQUAL
+&trans   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)  &kp LS(N5)                &kp LEFT_BRACKET  &kp PIPE          &kp RIGHT_BRACKET  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp BSLH    &trans
+&trans   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)  &kp LS(N5)  &kp C_MUTE                      &kp SINGLE_QUOTE                     &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &kp RIGHT_SHIFT
+                                 &kp LG(LALT)  &trans      &trans                                                                           &trans      &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -110,7 +117,7 @@
             display-name = "Symbol";
             bindings = <
 &kp ESC  &kp LS(LA(LG(N1)))  &trans  &trans          &kp LG(LS(LC(N4)))  &kp LG(LS(N5))                                                &mmv MOVE_Y(-200)                    &kp AMPS               &kp SQT                &kp DQT          &kp GRAVE  &kp PIPE  &kp BACKSLASH
-&trans   &trans              &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS                       &mmv MOVE_X(-200)  &mkp LCLK          &mmv MOVE_X(200)  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans     &trans    &trans
+&trans   &trans              &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS                       &mmv MOVE_X(-200)  &mkp LCLK          &mmv MOVE_X(200)  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp TILDE  &trans    &trans
 &trans   &trans              &trans  &trans          &trans              &trans                &kp LS(LC(LG(L)))                       &mmv MOVE_Y(200)                     &trans                 &trans                 &trans           &trans     &trans    &trans
                                      &trans          &trans              &trans                                                                                             &kp LG(LEFT_BRACKET)   &kp LG(RIGHT_BRACKET)  &trans
             >;
@@ -127,7 +134,7 @@
                                             &trans        &trans        &none                                                                   &kp BSPC        &mkp LCLK       &mkp RCLK
             >;
 
-            sensor-bindings = <&new_scroll>;
+            sensor-bindings = <&BT_SWITCH>;
         };
 
         layer_4 {
