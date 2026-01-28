@@ -31,7 +31,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Symbol}
   - $$mdi:apple-keyboard-shift$$
   - Z
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
+  - X
   - C
   - V
   - B
@@ -48,7 +48,7 @@ layers:
   - {t: 'Alt+Ctl+Gui+$$mdi:keyboard-space$$', h: Symbol}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   Layer1:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
