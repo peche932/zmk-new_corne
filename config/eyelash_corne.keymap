@@ -66,7 +66,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <80>;
+            tapping-term-ms = <150>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47>;
         };
     };
@@ -100,10 +100,10 @@
         default {
             display-name = "PECHE";
             bindings = <
-&hml ESC TAB  &kp Q  &kp W              &kp E                                   &kp R        &kp T                                               &msc MOVE_Y(10)                    &kp Y     &kp U      &kp I      &kp O    &kp P       &kp MINUS
-&kp LCTRL     &kp A  &kp S              &kp D                                   &kp F        &kp G                             &msc MOVE_X(-10)  &mkp MB4          &msc MOVE_X(10)  &kp H     &kp J      &kp K      &kp L    &lt 1 SEMI  &lt 2 ENTER
-&kp LSHFT     &kp Z  &hml_quick LALT X  &kp C                                   &kp V        &kp B                    &to 3                      &msc MOVE_Y(-10)                   &kp N     &kp M      &kp COMMA  &kp DOT  &kp SLASH   &lt 4 ESC
-                                        &mt LEFT_COMMAND LA(LC(LG(LS(SPACE))))  &lt 1 SPACE  &lt 2 LA(LC(LG(SPACE)))                                                                &kp BSPC  &kp SPACE  &kp RCMD
+&hml ESC TAB  &kp Q  &kp W  &kp E                                   &kp R        &kp T                                               &msc MOVE_Y(10)                    &kp Y     &kp U      &kp I          &kp O    &kp P       &kp MINUS
+&kp LCTRL     &kp A  &kp S  &kp D                                   &kp F        &kp G                             &msc MOVE_X(-10)  &mkp MB4          &msc MOVE_X(10)  &kp H     &kp J      &kp K          &kp L    &lt 1 SEMI  &lt 2 ENTER
+&kp LSHFT     &kp Z  &kp X  &kp C                                   &kp V        &kp B                    &to 3                      &msc MOVE_Y(-10)                   &kp N     &kp M      &kp COMMA      &kp DOT  &kp SLASH   &lt 4 ESC
+                            &mt LEFT_COMMAND LA(LC(LG(LS(SPACE))))  &lt 1 SPACE  &lt 2 LA(LC(LG(SPACE)))                                                                &kp BSPC  &kp SPACE  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&new_scroll>;
