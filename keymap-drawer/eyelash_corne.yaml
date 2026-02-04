@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - '&msc MOVE_Y(10)'
+  - '&msc MOVE_Y(15)'
   - Y
   - U
   - I
@@ -20,9 +20,9 @@ layers:
   - D
   - F
   - G
-  - '&msc MOVE_X(-10)'
+  - '&msc MOVE_X(-15)'
   - '&mkp MB4'
-  - '&msc MOVE_X(10)'
+  - '&msc MOVE_X(15)'
   - H
   - J
   - K
@@ -36,13 +36,13 @@ layers:
   - V
   - B
   - {t: Func, h: toggle}
-  - '&msc MOVE_Y(-10)'
+  - '&msc MOVE_Y(-15)'
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-esc$$', h: Shift}
+  - {t: '$$mdi:keyboard-esc$$', h: Layer4}
   - {t: 'Hyper+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: Layer1}
   - {t: 'Alt+Ctl+Gui+$$mdi:keyboard-space$$', h: Symbol}
@@ -69,9 +69,9 @@ layers:
   - {t: Sft+3, s: Sft+#}
   - {t: Sft+4, s: Sft+$}
   - {t: Sft+5, s: Sft+%}
-  - {t: '[', s: '{'}
+  - \
   - '|'
-  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -85,7 +85,7 @@ layers:
   - {t: Sft+4, s: Sft+$}
   - {t: Sft+5, s: Sft+%}
   - $$mdi:volume-off$$
-  - {t: '''', s: '"'}
+  - +
   - {t: Sft+6, s: Sft+^}
   - {t: Sft+7, s: Sft+&}
   - {t: Sft+8, s: Sft+*}
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
-  Shift:
+  Layer4:
   - $$mdi:keyboard-tab$$
   - {t: Sft+1, s: Sft+!}
   - {t: Sft+2, s: Sft+@}
