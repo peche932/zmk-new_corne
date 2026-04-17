@@ -21,7 +21,7 @@ layers:
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - '&mkp MB4'
+  - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
   - H
   - J
@@ -64,11 +64,11 @@ layers:
   - {t: '0', s: )}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+1, s: Sft+!}
-  - {t: Sft+2, s: Sft+@}
-  - {t: Sft+3, s: Sft+#}
-  - {t: Sft+4, s: Sft+$}
-  - {t: Sft+5, s: Sft+%}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - \
   - '|'
   - {t: \, s: '|'}
@@ -76,14 +76,14 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: \, s: '|', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+1, s: Sft+!}
-  - {t: Sft+2, s: Sft+@}
-  - {t: Sft+3, s: Sft+#}
-  - {t: Sft+4, s: Sft+$}
-  - {t: Sft+5, s: Sft+%}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - +
   - '&'
@@ -91,8 +91,8 @@ layers:
   - '"'
   - {t: '`', s: '~'}
   - '*'
-  - {t: PECHE, h: toggle}
-  - Gui+$$mdi:apple-keyboard-option$$
+  - {t: Symbol, h: toggle}
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -105,26 +105,26 @@ layers:
   - {t: Sft+3, s: Sft+#}
   - {t: Sft+4, s: Sft+$}
   - {t: Sft+5, s: Sft+%}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_Y(-400)'
   - {t: Sft+6, s: Sft+^}
   - {t: Sft+7, s: Sft+&}
   - {t: Sft+8, s: Sft+*}
   - {t: Sft+9, s: Sft+(}
   - {t: Sft+0, s: Sft+)}
-  - {t: \, s: '|'}
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '{'
   - {t: '[', s: '{'}
   - (
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_X(-400)'
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_X(400)'
   - )
   - {t: ']', s: '}'}
   - '}'
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -134,13 +134,13 @@ layers:
   - {t: Gui+Sft+Ctl+4, s: Gui+Sft+Ctl+$}
   - {t: Gui+Sft+5, s: Gui+Sft+%}
   - Sft+Ctl+Gui+L
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_Y(400)'
   - '&'
   - {t: '''', s: '"'}
   - '"'
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: PECHE, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {type: held alternate}
